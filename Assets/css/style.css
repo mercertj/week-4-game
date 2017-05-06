@@ -1,0 +1,40 @@
+.jumbotron {
+	text-align: center;
+	color: white;
+	background: grey;
+	font-family: sans-serif;
+}
+
+#scoreBox {
+	background: white;
+	width: 100px;
+	float: left;
+}
+
+#blue {
+	color: blue;
+
+}
+
+#green {
+	color: green;
+}
+
+#red {
+	color: red;
+
+}
+
+#yellow {
+	color: yellow;
+}
+
+.userTotal {
+	height: 100px;
+	margin: auto;
+	width: 100%;
+	background: grey;
+	text-align: center;
+	color: white;
+	padding-top: 40px;
+}

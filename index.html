@@ -5,21 +5,78 @@
 	<title>CrystalGame</title>
 
 <link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
 </head>
 	
 <body>
-<h1>Jewel Collector Game</h1>
+<div id="top container"><div>
+  <div class="jumbotron">
+		<h1 >Crystal Collector</h1>
+	</div>
+
+		<div>
+			<ol>
+<li>You will be given a random number at the start of the game."Number To Get" <span id ="ranNum"></span></li>
+<li>There are four crystals below.</li>
+	<ul>
+		<li id="blue">Blue</li>
+		<li id="green">Green</li>
+		<li id="red">Red</li>
+		<li id="yellow">Yellow</li>
+	</ul>
+<li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+<li>You win the game by matching your total score to the random number.</li>
+<li>You lose the game if your total score goes above the random number.</li>
+<li>The value of each crystal is hidden from you until you click on it.</li>
+<li>Each time when the game starts, the game will change the values of each crystal.</li>
+		</ol>
+	</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<p id="crystalNum"></p>
+			</div>
+			<div class="col-md-6" id="scoreBox">
+				<p>Wins:<span id="Wins"></span></p>
+				<p>Losses:<span id="Losses"></span></p>
+				<p>Guesses:<span id="Guesses"></span></p>
+			</div>
+		</div>
 
 
 
+		<div class="row">
+			<div class="col-xs-3" id = "blue">
+			<img src="assets/images/blue.png" class="click" height="100px" width="100px">
+			</div>
+			<div class="col-xs-3" id="green">
+				<img class="jewels" src="assets/images/green.png" height="100px" width="100px">
+			</div>
+			<div class="col-xs-3" id="red">
+				<img class="jewels" src="assets/images/red.png" height="100px" width="100px">
+			</div>
+			<div class="col-xs-3" id="yellow">
+				<img class="jewels" src="assets/images/yellow.png" height="100px" width="100px">
+			</div>
+		</div>
 
+  	<div class="userTotal">
+  		<h4>
+			<p>Your total is:</p>
+			<p id="scoreTotal"></p>
+		  </h4>
+		</div>
+	</div>
 
-
-
-	
+<script type="text/javascript" src="Assets/javascript/game.js"></script>		
 </body>
+
+
+
 </html>
